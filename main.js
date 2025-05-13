@@ -54,11 +54,13 @@
 */
 
 
-// let longStr = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+// let longStr = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+
+// let limit = 30;
 
 //  function longCheck(str) {
-//     if (str.length > 50 ) {
-//        return str.slice(0,47) + "..."
+//     if (str.length > limit) {
+//        return str.slice(0, limit - 3) + "..."
 //     }
 //     return str
 //  }
@@ -76,13 +78,18 @@
 
 // let taskStr = 'Я так сильно люблю программировать';
 
-// function wordCheck(str) {
-//    return str.split(' ').map(function(word) {
-//     return word.length;
+// function eachWordLength(str) {
+//    let lengths = str.split(' ');
+//    lengths.forEach(function(word) {
+//     console.log(word.length)
 //    })
+   
 // }
+// console.log(eachWordLength(taskStr));
 
-// console.log(wordCheck(taskStr))
+// Только почему-то 88 строчка в консоли выдает undefined
+
+
 
 /* 
     TASK 5
